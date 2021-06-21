@@ -1,4 +1,6 @@
 import React from 'react'
+import "../App.css"
+
 
 export default function Form() {
     const handleChange =(e)=>{   
@@ -24,7 +26,7 @@ export default function Form() {
     }
     return (
         <div>
-            <form>
+            <form className="flex">
                 <div>
                     <input type="text" onBlur={handleChange} placeholder="text"></input>
                 </div>

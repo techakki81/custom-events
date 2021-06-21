@@ -14,3 +14,5 @@ then useStae to show data on the form . Talk about adding the sideeffects in use
 
 
 Ajax
+
+ npm install tailwindcss

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Form from './componets/Form'
 import {useState,useEffect} from 'react'
@@ -7,8 +7,9 @@ function App() {
 
   const [person, setPerson] = useState({})
   usePerson()
+
   const raisedEvent= (e)=>{
-    setPerson(person)
+    setPerson(e.detail)
   }
   
   useEffect(() => {
@@ -25,13 +26,15 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="flex">
+      
       {
         person && 
-        <div>
-          <label>{person.first}</label>
-          <label>{person.last}</label>
-          <label>{person.picutre}</label>
+          <div className="flexStart">
+          <h1> Found New Culprit !!!  </h1>
+          <div>First Name: {person.first}</div>
+          <div>Last Name: {person.last}</div>         
+          <img src={person.picture} />
         </div>
       }
       
