@@ -10,7 +10,7 @@ Form
 just do a console.log 
 
 Add some data to form
-then useStae to show data on the form . Talk about adding the sideeffects in useEffect
+then useState to show data on the form . Talk about adding the sideeffects in useEffect
 
 
 Ajax
